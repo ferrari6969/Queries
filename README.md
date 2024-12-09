@@ -135,14 +135,6 @@ db.birthdays.insertMany([
         __v: 0
     },
     {
-        _id: ObjectId("675543761d49ffc1ad622e0e"),
-        bdId: "bd_u12345_2024",
-        name: "John Doe",
-        dateOfBirth: ISODate("2024-12-08T06:57:58.428Z"),
-        comments: [],
-        __v: 0
-    },
-    {
         _id: ObjectId("675543761d49ffc1ad622e10"),
         bdId: "bd_U002_2024",
         name: "Bob Smith",
