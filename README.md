@@ -143,3 +143,13 @@ db.birthdays.insertMany([
         __v: 0
     }
 ]);
+
+
+# Third Query
+
+db.users.updateMany(
+  {}, 
+  { $set: { isAdmin: false } } 
+);
+# Fourth Query
+db.users.updateOne({"userId": "U004"}, { $set: { isAdmin: true }})
