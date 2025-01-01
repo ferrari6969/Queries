@@ -183,7 +183,7 @@ create a database.
     ]);
     
 # festivals Query 2
-    db.collectionName.insertMany([
+    db.festivalshowcases.insertMany([
       {
         "_id": ObjectId("6775829b9402fcc16cff5301"),
         "festivalId": "new-year-celebration-2025",
