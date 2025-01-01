@@ -3,15 +3,17 @@
 
 Drop the database:
 
-    1.mongosh
-    2.usedb Shoutout
-    3.db.dropdatabase()
+    mongosh
+
+    usedb Shoutout
+
+    db.dropdatabase()
 
 Note: You can ask chatgpt it will help spectifically for the windows the above steps worked for me in mac.
 
 create a database.
 
-    1.use Shoutout
+    use Shoutout
 
 # User Query:
 
