@@ -54,7 +54,7 @@ create a database.
         dateOfBirth: "2003-08-02",
         dateOfJoining: "2024-07-29",
         avatarId: "avatar5",
-        isAdmin: false
+        isAdmin: true
       },
       {
         userId: "I356124",
