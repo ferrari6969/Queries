@@ -1,5 +1,5 @@
 # Queries
-#follow the steps.
+# follow the steps.
 
 Drop the database:
 
@@ -163,3 +163,49 @@ create a database.
       }
     ]);
 
+# Festivals Query
+
+    db.festivallists.insertMany([
+      {
+        listingId: "festival1",
+        name: "New Year Celebration",
+        month: 1,
+        day: 1,
+        videoId: "video123",
+      },
+      {
+        listingId: "festival2",
+        name: "Post-New Year Party",
+        month: 1,
+        day: 2,
+        videoId: "video456",
+      }
+    ]);
+    
+# festivals Query 2
+    db.collectionName.insertMany([
+      {
+        "_id": ObjectId("6775829b9402fcc16cff5301"),
+        "festivalId": "new-year-celebration-2025",
+        "name": "New Year Celebration",
+        "year": 2025,
+        "date": ISODate("2025-01-01T00:00:00.000Z"),
+        "videoId": "video123",
+        "isPast": true,
+        "__v": 0,
+        "createdAt": ISODate("2025-01-01T17:59:55.000Z")
+      },
+      {
+        "_id": ObjectId("677589a83762316bed06bed0"),
+        "festivalId": "post-new-year-party-2025",
+        "name": "Post-New Year Party",
+        "year": 2025,
+        "date": ISODate("2025-01-02T00:00:00.000Z"),
+        "videoId": "video456",
+        "isPast": false,
+        "__v": 0,
+        "createdAt": ISODate("2025-01-01T18:30:00.000Z")
+      }
+    ]);
+
+    
