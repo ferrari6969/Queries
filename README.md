@@ -208,6 +208,125 @@ create a database.
       }
     ]);
 
+# for testing purpose
+
+    db.users.bulkWrite([
+    { 
+        updateOne: { 
+            filter: { userId: "Vishal" }, 
+            update: { $set: { email: "test@sample.org" } } 
+        } 
+    },
+    { 
+        updateOne: { 
+            filter: { userId: "Sunil" }, 
+            update: { $set: { email: "test@sample.org" } } 
+        } 
+    },
+    { 
+        updateOne: { 
+            filter: { userId: "chandra" }, 
+            update: { $set: { email: "test@sample.org" } } 
+        } 
+    },
+    { 
+        updateOne: { 
+            filter: { userId: "Ramya" }, 
+            update: { $set: { email: "ramya.bommana@sap.com" } } 
+        } 
+    },
+    { 
+        updateOne: { 
+            filter: { userId: "Prashamsa" }, 
+            update: { $set: { email: "prashamsa.sagam@sap.com" } } 
+        } 
+    },
+    { 
+        updateOne: { 
+            filter: { userId: "Preeti" }, 
+            update: { $set: { email: "test@sample.org" } } 
+        } 
+    },
+    { 
+        updateOne: { 
+            filter: { userId: "Paramesh" }, 
+            update: { $set: { email: "test@sample.org" } } 
+        } 
+    },
+    { 
+        updateOne: { 
+            filter: { userId: "Ramesh" }, 
+            update: { $set: { email: "test@sample.org" } } 
+        } 
+    },
+    { 
+        updateOne: { 
+            filter: { userId: "Santosh" }, 
+            update: { $set: { email: "test@sample.org" } } 
+        } 
+    },
+    { 
+        updateOne: { 
+            filter: { userId: "Satya" }, 
+            update: { $set: { email: "test@sample.org" } } 
+        } 
+    },
+    { 
+        updateOne: { 
+            filter: { userId: "Naresh Gara" }, 
+            update: { $set: { email: "test@sample.org" } } 
+        } 
+    },
+    { 
+        updateOne: { 
+            filter: { userId: "Naresh Sapavat" }, 
+            update: { $set: { email: "test@sample.org" } } 
+        } 
+    },
+    { 
+        updateOne: { 
+            filter: { userId: "Raghu Paniker" }, 
+            update: { $set: { email: "test@sample.org" } } 
+        } 
+    },
+    { 
+        updateOne: { 
+            filter: { userId: "Sandeep" }, 
+            update: { $set: { email: "test@sample.org" } } 
+        } 
+    },
+    { 
+        updateOne: { 
+            filter: { userId: "Shiva Bharghava" }, 
+            update: { $set: { email: "test@sample.org" } } 
+        } 
+    },
+    { 
+        updateOne: { 
+            filter: { userId: "Bhanu" }, 
+            update: { $set: { email: "test@sample.org" } } 
+        } 
+    },
+    { 
+        updateOne: { 
+            filter: { userId: "Peddiraju" }, 
+            update: { $set: { email: "test@sample.org" } } 
+        } 
+    },
+    { 
+        updateOne: { 
+            filter: { userId: "Nikhilesh" }, 
+            update: { $set: { email: "nikhilesh.matta@sap.com" } } 
+        } 
+    },
+    { 
+        updateOne: { 
+            filter: { userId: "Kavitha Borra" }, 
+            update: { $set: { email: "test@sample.org" } } 
+        } 
+    }
+    ]);
+
 # User Update Query
     db.users.bulkWrite([
     { updateOne: { filter: { userId: "Vishal" }, update: { $set: { email: "vishal.angirekula@sap.com" } } } },
