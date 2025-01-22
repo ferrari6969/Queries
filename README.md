@@ -208,4 +208,28 @@ create a database.
       }
     ]);
 
+# User Update Query
+    db.users.bulkWrite([
+    { updateOne: { filter: { userId: "Vishal" }, update: { $set: { email: "vishal.angirekula@sap.com" } } } },
+    { updateOne: { filter: { userId: "Sunil" }, update: { $set: { email: "sunil.badugu@sap.com" } } } },
+    { updateOne: { filter: { userId: "chandra" }, update: { $set: { email: "chandra.sekhar.bejugam@sap.com" } } } },
+    { updateOne: { filter: { userId: "Ramya" }, update: { $set: { email: "ramya.bommana@sap.com" } } } },
+    { updateOne: { filter: { userId: "Prashamsa" }, update: { $set: { email: "prashamsa.sagam@sap.com" } } } },
+    { updateOne: { filter: { userId: "Preeti" }, update: { $set: { email: "preethi.balijepally.chellai@sap.com" } } } },
+    { updateOne: { filter: { userId: "Paramesh" }, update: { $set: { email: "paramesh.adama@sap.com" } } } },
+    { updateOne: { filter: { userId: "Ramesh" }, update: { $set: { email: "ramesh.korlakunta@sap.com" } } } },
+    { updateOne: { filter: { userId: "Santosh" }, update: { $set: { email: "santosh.sulege@sap.com" } } } },
+    { updateOne: { filter: { userId: "Satya" }, update: { $set: { email: "satya.pavan.kumar.rajit.kommoju@sap.com" } } } },
+    { updateOne: { filter: { userId: "Naresh Gara" }, update: { $set: { email: "naresh.kumar.gara@sap.com" } } } },
+    { updateOne: { filter: { userId: "Naresh Sapavat" }, update: { $set: { email: "n.sapavat@sap.com" } } } },
+    { updateOne: { filter: { userId: "Raghu Paniker" }, update: { $set: { email: "raghu.s.panicker@sap.com" } } } },
+    { updateOne: { filter: { userId: "Sandeep" }, update: { $set: { email: "sandeep.harinarthini@sap.com" } } } },
+    { updateOne: { filter: { userId: "Shiva Bharghava" }, update: { $set: { email: "shiva.bharghava.rachamalla@sap.com" } } } },
+    { updateOne: { filter: { userId: "Bhanu" }, update: { $set: { email: "bhanu.komerally@sap.com" } } } },
+    { updateOne: { filter: { userId: "Peddiraju" }, update: { $set: { email: "peddiraju.dadi@sap.com" } } } },
+    { updateOne: { filter: { userId: "Nikhilesh" }, update: { $set: { email: "nikhilesh.matta@sap.com" } } } },
+    { updateOne: { filter: { userId: "Kavitha Borra" }, update: { $set: { email: "kavitha.borra@sap.com" } } } }
+    ]);
+
+
     
